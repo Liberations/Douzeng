@@ -1,0 +1,71 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.aweme.hook'
+    compileSdk 34
+    signingConfigs {
+        wen {
+            keyAlias 'wen'
+            keyPassword '123456'
+            storeFile file('..\\cert\\wendev.jks')
+            storePassword '123456'
+        }
+    }
+    def curVersion = getVersionCode()
+    defaultConfig {
+        applicationId "com.aweme.hook"
+        minSdk 23
+        targetSdk 34
+        versionCode curVersion
+        versionName "1.0"
+        signingConfig signingConfigs.wen
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+
+}
+def getVersionCode() {
+    def propsFile = file('version.properties')
+    def properties = new Properties()
+    properties.load(new FileInputStream(propsFile))
+    def vCode = properties['versionCode'].toInteger()
+    properties['versionCode'] = (++vCode).toString()
+    properties.store(propsFile.newWriter(), null)
+    return vCode
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    compileOnly("de.robv.android.xposed:api:82")
+    implementation 'com.google.android.material:material:1.9.0'
+    
+    // DexKit - 用于动态查找混淆后的类和方法
+    implementation 'org.luckypray:dexkit:2.0.4'
+    
+    // Kotlin标准库
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+}

@@ -1,0 +1,24 @@
+                    Executable : C:\Users\qq181\AppData\Local\Android\Sdk\cmake\3.22.1\bin\cmake.exe
+arguments : 
+-HD:\xposeddev\vivo\app\src\main\cpp
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_SYSTEM_VERSION=21
+-DANDROID_PLATFORM=android-21
+-DANDROID_ABI=x86_64
+-DCMAKE_ANDROID_ARCH_ABI=x86_64
+-DANDROID_NDK=C:\Users\qq181\AppData\Local\Android\Sdk\ndk\28.2.13676358
+-DCMAKE_ANDROID_NDK=C:\Users\qq181\AppData\Local\Android\Sdk\ndk\28.2.13676358
+-DCMAKE_TOOLCHAIN_FILE=C:\Users\qq181\AppData\Local\Android\Sdk\ndk\28.2.13676358\build\cmake\android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=C:\Users\qq181\AppData\Local\Android\Sdk\cmake\3.22.1\bin\ninja.exe
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=D:\xposeddev\vivo\app\build\intermediates\cxx\RelWithDebInfo\46q653e5\obj\x86_64
+-DCMAKE_RUNTIME_OUTPUT_DIRECTORY=D:\xposeddev\vivo\app\build\intermediates\cxx\RelWithDebInfo\46q653e5\obj\x86_64
+-DCMAKE_BUILD_TYPE=RelWithDebInfo
+-BD:\xposeddev\vivo\app\.cxx\RelWithDebInfo\46q653e5\x86_64
+-GNinja
+-DANDROID_SUPPORT_FLEXIBLE_PAGE_SIZES=ON
+jvmArgs : 
+
+
+                    Build command args: []
+                    Version: 2

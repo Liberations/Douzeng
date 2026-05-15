@@ -1,0 +1,21 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        maven { url "https://maven.aliyun.com/repository/public" } //jcenter
+        maven { url "https://maven.aliyun.com/repository/google" } //google
+        google()
+        mavenCentral()
+        maven { url 'https://api.xposed.info' }
+        maven { url "https://jitpack.io" }
+    }
+}
+rootProject.name = "My Application"
+include ':app'
+//include ':LiteMMSdk'

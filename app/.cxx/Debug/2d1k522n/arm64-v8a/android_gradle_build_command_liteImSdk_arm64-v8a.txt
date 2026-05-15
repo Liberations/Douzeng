@@ -1,0 +1,7 @@
+Executable : D:\androidsdk\cmake\3.22.1\bin\ninja.exe
+arguments : 
+-C
+D:\project\douyin\app\.cxx\Debug\2d1k522n\arm64-v8a
+liteImSdk
+jvmArgs : 
+

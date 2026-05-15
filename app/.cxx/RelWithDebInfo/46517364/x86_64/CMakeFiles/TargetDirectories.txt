@@ -1,0 +1,3 @@
+D:/xposeddev/vivo/app/.cxx/RelWithDebInfo/46517364/x86_64/CMakeFiles/timsdk.dir
+D:/xposeddev/vivo/app/.cxx/RelWithDebInfo/46517364/x86_64/CMakeFiles/edit_cache.dir
+D:/xposeddev/vivo/app/.cxx/RelWithDebInfo/46517364/x86_64/CMakeFiles/rebuild_cache.dir

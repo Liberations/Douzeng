@@ -1,0 +1,8 @@
+# ninja log v5
+2	73	7968279650235703	CMakeFiles/timsdk.dir/timsdk.cpp.o	7bd8cde81202323d
+73	148	7968279650967270	D:/xposeddev/vivo/app/build/intermediates/cxx/RelWithDebInfo/46q653e5/obj/x86_64/libtimsdk.so	d175797f14df27f
+0	10	0	clean	7f5c905d8ffdfd54
+0	70	7968287533372229	CMakeFiles/liteImSdk.dir/timsdk.cpp.o	29aad3bdb14056d
+70	149	7968287534126491	D:/xposeddev/vivo/app/build/intermediates/cxx/RelWithDebInfo/46q653e5/obj/x86_64/libliteImSdk.so	a039ca89bf249ebf
+1	71	7968288888036248	CMakeFiles/liteImSdk.dir/timsdk.cpp.o	29aad3bdb14056d
+71	148	7968288888776285	D:/xposeddev/vivo/app/build/intermediates/cxx/RelWithDebInfo/46q653e5/obj/x86_64/libliteImSdk.so	a039ca89bf249ebf

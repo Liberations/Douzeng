@@ -1,0 +1,3 @@
+ninja: Entering directory `D:\xposeddev\vivo\app\.cxx\RelWithDebInfo\46517364\x86'
+[1/2] Building CXX object CMakeFiles/timsdk.dir/timsdk.cpp.o
+[2/2] Linking CXX shared library D:\xposeddev\vivo\app\build\intermediates\cxx\RelWithDebInfo\46517364\obj\x86\libtimsdk.so

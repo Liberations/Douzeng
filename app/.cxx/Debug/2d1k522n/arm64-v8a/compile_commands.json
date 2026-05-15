@@ -1,0 +1,7 @@
+[
+{
+  "directory": "D:/project/douyin/app/.cxx/Debug/2d1k522n/arm64-v8a",
+  "command": "D:\\androidsdk\\ndk\\21.4.7075529\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=aarch64-none-linux-android21 --gcc-toolchain=D:/androidsdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/androidsdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DLITEIMSDK_DEBUG_BUILD=1 -DliteImSdk_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC -o CMakeFiles\\liteImSdk.dir\\timsdk.cpp.o -c D:\\project\\douyin\\LiteMMSdk\\src\\main\\cpp\\timsdk.cpp",
+  "file": "D:\\project\\douyin\\LiteMMSdk\\src\\main\\cpp\\timsdk.cpp"
+}
+]

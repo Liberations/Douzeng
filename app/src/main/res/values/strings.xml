@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">抖增</string>
+    <string name="xposed_description">增加抖音离线缓存数量</string>
+</resources>

@@ -1,0 +1,14 @@
+*.iml
+.gradle
+/local.properties
+.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+*.apk
+*.jar
+LiteMMSdk
+dou2
+douhuancun_smali
+cert

@@ -1,0 +1,7 @@
+Executable : C:\Users\qq181\AppData\Local\Android\Sdk\cmake\3.22.1\bin\ninja.exe
+arguments : 
+-C
+D:\xposeddev\vivo\app\.cxx\Debug\k2a5s3p4\arm64-v8a
+liteImSdk
+jvmArgs : 
+

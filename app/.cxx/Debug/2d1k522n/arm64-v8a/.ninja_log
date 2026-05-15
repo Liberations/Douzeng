@@ -1,0 +1,6 @@
+# ninja log v5
+1	456	7970141542955787	CMakeFiles/liteImSdk.dir/timsdk.cpp.o	cd010df591ba68c3
+459	581	7970141544329436	D:/project/douyin/app/build/intermediates/cxx/Debug/2d1k522n/obj/arm64-v8a/libliteImSdk.so	92a760a4e06fa919
+0	12	0	clean	8f37bb05e635d3d6
+3	543	7970141866725499	CMakeFiles/liteImSdk.dir/timsdk.cpp.o	cd010df591ba68c3
+543	672	7970141868136560	D:/project/douyin/app/build/intermediates/cxx/Debug/2d1k522n/obj/arm64-v8a/libliteImSdk.so	92a760a4e06fa919
