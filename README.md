@@ -1,7 +1,7 @@
 # 抖增 - 抖音离线缓存增强模块
 
-![icon](https://img.shields.io/badge/Version-2.0.0-blue)
-![LSPosed](https://img.shields.io/badge/LSPosed-API_101-orange)
+![icon](https://img.shields.io/badge/Version-1.0.1-blue)
+![LSPosed](https://img.shields.io/badge/LSPosed-legacy-green)
 ![Target](https://img.shields.io/badge/Target-抖音-brightgreen)
 
 ## 📱 功能介绍
