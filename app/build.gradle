@@ -1,36 +1,59 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.google.devtools.ksp'
 }
 
 android {
     namespace 'com.aweme.hook'
-    compileSdk 34
-    signingConfigs {
-        wen {
-            keyAlias 'wen'
-            keyPassword '123456'
-            storeFile file('..\\cert\\wendev.jks')
-            storePassword '123456'
-        }
+    compileSdk 36
+
+    def signingProps = new Properties()
+    def signingPropsFile = rootProject.file('local.properties')
+    if (signingPropsFile.exists()) {
+        signingProps.load(new FileInputStream(signingPropsFile))
     }
-    def curVersion = getVersionCode()
-    defaultConfig {
-        applicationId "com.aweme.hook"
-        minSdk 23
-        targetSdk 34
-        versionCode curVersion
-        versionName "1.0"
-        signingConfig signingConfigs.wen
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        multiDexEnabled false
+
+    def keystoreFile = signingProps.getProperty('SIGNING_STORE_FILE', '')
+    def hasCustomSigning = keystoreFile && file(keystoreFile).exists()
+
+    if (hasCustomSigning) {
+        println("存在自定义签名文件！正在配置签名...")
+        signingConfigs {
+            wen {
+                keyAlias signingProps.getProperty('SIGNING_KEY_ALIAS', '')
+                keyPassword signingProps.getProperty('SIGNING_KEY_PASSWORD', '')
+                storeFile file(keystoreFile)
+                storePassword signingProps.getProperty('SIGNING_STORE_PASSWORD', '')
+            }
+        }
+    }else {
+        println("未找到自定义签名文件，使用默认配置。")
     }
 
     buildTypes {
+        debug {
+            if (hasCustomSigning) {
+                signingConfig signingConfigs.wen
+            }
+        }
         release {
+            if (hasCustomSigning) {
+                signingConfig signingConfigs.wen
+            }
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+
+    defaultConfig {
+        applicationId "com.aweme.hook"
+        minSdk 23
+        targetSdk 36
+        versionCode 718
+        versionName "1.0.1"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled false
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
@@ -45,9 +68,19 @@ android {
             jniLibs.srcDirs = ['libs']
         }
     }
-
-
+    
+    buildFeatures {
+        buildConfig = true
+        viewBinding = true
+    }
+    
+    packaging {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
 }
+
 def getVersionCode() {
     def propsFile = file('version.properties')
     def properties = new Properties()
@@ -59,9 +92,20 @@ def getVersionCode() {
 }
 
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    
+    // YukiHookAPI 1.3.1 - Kotlin DSL 风格的 Xposed Hook 框架
+    implementation "com.highcapable.yukihookapi:api:1.3.1"
+    ksp "com.highcapable.yukihookapi:ksp-xposed:1.3.1"
+    
+    // KavaRef - 现代化 Java 反射 API (替代 YukiHookAPI 废弃的反射部分)
+    implementation "com.highcapable.kavaref:kavaref-core:1.0.2"
+    implementation "com.highcapable.kavaref:kavaref-extension:1.0.2"
+    
+    // 传统 Xposed API（保留兼容）
     compileOnly("de.robv.android.xposed:api:82")
-    implementation 'com.google.android.material:material:1.9.0'
+    
+    implementation 'com.google.android.material:material:1.12.0'
     
     // DexKit - 用于动态查找混淆后的类和方法
     implementation 'org.luckypray:dexkit:2.0.4'

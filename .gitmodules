@@ -1,0 +1,3 @@
+[submodule "com.aweme.hook"]
+	path = com.aweme.hook
+	url = https://github.com/Xposed-Modules-Repo/com.aweme.hook.git
