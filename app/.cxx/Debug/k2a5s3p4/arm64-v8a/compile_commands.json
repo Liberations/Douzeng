@@ -1,7 +1,0 @@
-[
-{
-  "directory": "D:/xposeddev/vivo/app/.cxx/Debug/k2a5s3p4/arm64-v8a",
-  "command": "C:\\Users\\qq181\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=aarch64-none-linux-android21 --sysroot=C:/Users/qq181/AppData/Local/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DliteImSdk_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -o CMakeFiles\\liteImSdk.dir\\timsdk.cpp.o -c D:\\xposeddev\\vivo\\app\\src\\main\\cpp\\timsdk.cpp",
-  "file": "D:\\xposeddev\\vivo\\app\\src\\main\\cpp\\timsdk.cpp"
-}
-]

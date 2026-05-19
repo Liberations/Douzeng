@@ -1,7 +1,0 @@
-Executable : C:\Users\qq181\AppData\Local\Android\Sdk\cmake\3.22.1\bin\ninja.exe
-arguments : 
--C
-D:\xposeddev\vivo\app\.cxx\RelWithDebInfo\3s5c3g44\armeabi-v7a
-timsdk
-jvmArgs : 
-

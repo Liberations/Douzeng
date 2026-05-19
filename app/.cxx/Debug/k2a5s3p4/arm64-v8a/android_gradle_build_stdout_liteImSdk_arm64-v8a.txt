@@ -1,3 +1,0 @@
-ninja: Entering directory `D:\xposeddev\vivo\app\.cxx\Debug\k2a5s3p4\arm64-v8a'
-[1/2] Building CXX object CMakeFiles/liteImSdk.dir/timsdk.cpp.o
-[2/2] Linking CXX shared library D:\xposeddev\vivo\app\build\intermediates\cxx\Debug\k2a5s3p4\obj\arm64-v8a\libliteImSdk.so

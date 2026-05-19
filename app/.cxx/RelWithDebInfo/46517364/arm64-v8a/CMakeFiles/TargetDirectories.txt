@@ -1,3 +1,0 @@
-D:/xposeddev/vivo/app/.cxx/RelWithDebInfo/46517364/arm64-v8a/CMakeFiles/timsdk.dir
-D:/xposeddev/vivo/app/.cxx/RelWithDebInfo/46517364/arm64-v8a/CMakeFiles/edit_cache.dir
-D:/xposeddev/vivo/app/.cxx/RelWithDebInfo/46517364/arm64-v8a/CMakeFiles/rebuild_cache.dir

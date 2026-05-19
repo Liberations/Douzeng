@@ -1,2 +1,0 @@
-ninja: Entering directory `D:\xposeddev\vivo\app\.cxx\Debug\k2a5s3p4\arm64-v8a'
-ninja: no work to do.
